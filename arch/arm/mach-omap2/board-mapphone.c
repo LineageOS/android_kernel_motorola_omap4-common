@@ -194,6 +194,7 @@ static int plat_uart_enable(void)
 
 static struct wl12xx_platform_data omap4_mapphone_wlan_data __initdata = {
 	.irq = -1, /* OMAP_GPIO_IRQ(GPIO_WIFI_IRQ),*/
+	.irq_trigger = IRQF_TRIGGER_HIGH,
 	.ref_clock_freq = 26000000,
 	.tcxo_clock_freq = 26000000,
 };
